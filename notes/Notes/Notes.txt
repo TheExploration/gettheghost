@@ -1,0 +1,6 @@
+Modifications:
+
+Day 1:
+Player Movement, Collision, Scrolling Background, Shooting
+
+Day 2:
