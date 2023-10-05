@@ -5,15 +5,15 @@ show_debug_message(gamepad_is_connected(0))
 
 if (gamepad_button_check_pressed(0, gp_face1)) {
 	shoot_delay = 0;
-	instance_create_layer(x-3, y, "Projectile", o_bullet);
-	instance_create_layer(x+2, y, "Projectile", o_bullet);
+	instance_create_layer(x-4, y, "Projectile", o_bullet);
+	instance_create_layer(x+3, y, "Projectile", o_bullet);
 	audio_play_sound(s_shoot, 1, false);
 } else if (gamepad_button_check(0, gp_face1)) {
 
 	shoot_delay++;
 	if (shoot_delay > 10) {
-		instance_create_layer(x+2, y, "Projectile", o_bullet);
-		instance_create_layer(x-3, y, "Projectile", o_bullet);
+		instance_create_layer(x+3, y, "Projectile", o_bullet);
+		instance_create_layer(x-4, y, "Projectile", o_bullet);
 		shoot_delay = 0;
 		 audio_play_sound(s_shoot, 1, false);
 	}
@@ -26,7 +26,13 @@ var _len = point_distance(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_v
 hsp = lengthdir_x(_len, _dir)*2;
 vsp = lengthdir_y(_len, _dir)*2;
 
-
+if (hsp > 0) {
+	image_index = 1;
+} else if (hsp < 0){
+	image_index = 2;
+} else {
+	image_index = 0;
+}
 
 
 

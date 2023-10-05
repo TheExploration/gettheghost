@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "s_shoot.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.45,
 }
