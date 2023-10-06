@@ -31,7 +31,7 @@ if (mouse_check_button_pressed(mb_right) && !roll && has_control) {
 	
 }
 if (roll && !has_control) {
-	if (rolldir != 0) {
+	if (hsp != 0 || vsp !=0) {
 		hsp = lengthdir_x(1, rolldir)*2.5;
 		vsp = lengthdir_y(1, rolldir)*2.5;
 	}
@@ -45,6 +45,7 @@ if (has_control) {
 		instance_create_layer(x-3, y, "Projectile", o_bullet);
 		instance_create_layer(x+2, y, "Projectile", o_bullet);
 		audio_play_sound(s_shoot, 1, false);
+		screenshake(5, 0.1, 0.05)
 	} else if (keyboard_check(vk_space) || mouse_check_button(mb_left)) {
 
 		shoot_delay++;
@@ -53,6 +54,7 @@ if (has_control) {
 			instance_create_layer(x-3, y, "Projectile", o_bullet);
 			shoot_delay = 0;
 			 audio_play_sound(s_shoot, 1, false);
+			 screenshake(5, 0.1, 0.05)
 		}
 	}
 }
@@ -86,4 +88,15 @@ if (has_control) {
 //Move
 move_and_collide(hsp, vsp, o_wall);
 
-
+//Flash
+if (flashing) {
+	
+	if (flashAlpha > 0) {
+		flashAlpha -=0.2;
+	} else {
+		flashAlpha = 2;
+	}
+	
+} else {
+	flashAlpha = 0;
+}

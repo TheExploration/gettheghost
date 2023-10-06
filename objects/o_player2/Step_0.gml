@@ -33,7 +33,7 @@ if (gamepad_button_check_pressed(0, gp_shoulderr) && !roll && has_control) {
 	
 }
 if (roll && !has_control) {
-	if (rolldir != 0) {
+	if (hsp != 0 || vsp !=0) {
 		hsp = lengthdir_x(1, rolldir)*2.5;
 		vsp = lengthdir_y(1, rolldir)*2.5;
 	}
@@ -46,6 +46,7 @@ if (has_control) {
 		instance_create_layer(x-4, y, "Projectile", o_bullet);
 		instance_create_layer(x+3, y, "Projectile", o_bullet);
 		audio_play_sound(s_shoot, 1, false);
+		screenshake(5, 0.1, 0.05)
 	} else if (gamepad_button_check(0, gp_face1)) {
 
 		shoot_delay++;
@@ -53,7 +54,8 @@ if (has_control) {
 			instance_create_layer(x+3, y, "Projectile", o_bullet);
 			instance_create_layer(x-4, y, "Projectile", o_bullet);
 			shoot_delay = 0;
-			 audio_play_sound(s_shoot, 1, false);
+			audio_play_sound(s_shoot, 1, false);
+			screenshake(5, 0.1, 0.05)
 		}
 	}
 }
@@ -63,8 +65,8 @@ if (has_control) {
 if (has_control) {
 	var _dir  = point_direction(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv)); //lets say the direction from the x,y point to the mouse x, y point are = 40;
 	var _len = point_distance(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv));
-	hsp = lengthdir_x(_len, _dir)*2;
-	vsp = lengthdir_y(_len, _dir)*2;
+	hsp = lengthdir_x(_len, _dir)*move_spd;
+	vsp = lengthdir_y(_len, _dir)*move_spd;
 
 	if (hsp > 0) {
 		image_index = 1;
@@ -82,3 +84,15 @@ if (has_control) {
 move_and_collide(hsp, vsp, o_wall);
 
 
+//Flash
+if (flashing) {
+	
+	if (flashAlpha > 0) {
+		flashAlpha -=0.2;
+	} else {
+		flashAlpha = 2;
+	}
+	
+} else {
+	flashAlpha = 0;
+}

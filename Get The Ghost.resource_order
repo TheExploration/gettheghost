@@ -37,6 +37,7 @@
     {"name":"o_wall","order":1,"path":"objects/o_wall/o_wall.yy",},
     {"name":"o_player2","order":6,"path":"objects/o_player2/o_player2.yy",},
     {"name":"sh_flash","order":1,"path":"shaders/sh_flash/sh_flash.yy",},
+    {"name":"snd_phurt","order":4,"path":"sounds/snd_phurt/snd_phurt.yy",},
     {"name":"snd_roll","order":3,"path":"sounds/snd_roll/snd_roll.yy",},
     {"name":"s_flame2","order":9,"path":"sprites/s_flame2/s_flame2.yy",},
     {"name":"s_bossflame","order":10,"path":"sprites/s_bossflame/s_bossflame.yy",},

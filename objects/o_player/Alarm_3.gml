@@ -1,0 +1,10 @@
+/// @description Hurt
+flashing = false;
+
+
+
+
+
+
+
+
