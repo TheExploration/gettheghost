@@ -3,6 +3,17 @@
 // You can write your code in this editor
 show_debug_message(gamepad_is_connected(0))
 
+if (hp <= 0) {
+	has_control = false;
+	sprite_index = s_die;
+	instance_destroy(o_flame)
+	image_speed = 1;
+	if (image_index > image_number-1){
+		instance_destroy();
+		
+	}
+}
+
 
 //Get Input Dodgeroll
 if (gamepad_button_check_pressed(0, gp_shoulderr) && !roll && has_control) {

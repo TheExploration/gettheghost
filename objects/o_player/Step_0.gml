@@ -1,6 +1,17 @@
 
 /// @description STEP
 // You can write your code in this editor
+if (hp <= 0) {
+	has_control = false;
+	sprite_index = s_die;
+	instance_destroy(o_flame2)
+	image_speed = 1;
+	if (image_index > image_number-1){
+		instance_destroy();
+		
+	}
+}
+
 
 //Get Input Dodgeroll
 if (mouse_check_button_pressed(mb_right) && !roll && has_control) {
@@ -10,15 +21,15 @@ if (mouse_check_button_pressed(mb_right) && !roll && has_control) {
 	audio_stop_sound(snd_roll)
 	audio_play_sound(snd_roll, 0, false)
 	if (hsp < 0) { 
-		sprite_index = s_rollleft
+		sprite_index = s_roll2left
 		image_index = 1
 		image_speed = 1;
 	} else if (hsp > 0) {
-		sprite_index = s_rollright
+		sprite_index = s_roll2right
 		image_index = 1
 		image_speed = 1;
 	} else {
-		sprite_index = s_roll
+		sprite_index = s_roll2
 		image_index = 0
 		image_speed = 1;
 	}
@@ -42,6 +53,8 @@ if (roll && !has_control) {
 if (has_control) {
 	if (keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left)) {
 		shoot_delay = 0;
+		
+	
 		instance_create_layer(x-3, y, "Projectile", o_bullet);
 		instance_create_layer(x+2, y, "Projectile", o_bullet);
 		audio_play_sound(s_shoot, 1, false);

@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_phurt.wav",
   "type": 0,
-  "volume": 0.58,
+  "volume": 0.15,
 }

@@ -31,10 +31,11 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.0.98",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},},
+    {"id":{"name":"s_roll2left","path":"sprites/s_roll2left/s_roll2left.yy",},},
     {"id":{"name":"o_boss","path":"objects/o_boss/o_boss.yy",},},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},
     {"id":{"name":"s_shoot","path":"sounds/s_shoot/s_shoot.yy",},},
@@ -43,6 +44,7 @@
     {"id":{"name":"s_rollleft","path":"sprites/s_rollleft/s_rollleft.yy",},},
     {"id":{"name":"o_flame2","path":"objects/o_flame2/o_flame2.yy",},},
     {"id":{"name":"enemybullet","path":"sprites/enemybullet/enemybullet.yy",},},
+    {"id":{"name":"s_roll2right","path":"sprites/s_roll2right/s_roll2right.yy",},},
     {"id":{"name":"s_boss","path":"sprites/s_boss/s_boss.yy",},},
     {"id":{"name":"s_flame","path":"sprites/s_flame/s_flame.yy",},},
     {"id":{"name":"o_global","path":"objects/o_global/o_global.yy",},},
@@ -51,6 +53,8 @@
     {"id":{"name":"s_roll","path":"sprites/s_roll/s_roll.yy",},},
     {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},},
     {"id":{"name":"s_player2","path":"sprites/s_player2/s_player2.yy",},},
+    {"id":{"name":"s_hp","path":"sprites/s_hp/s_hp.yy",},},
+    {"id":{"name":"s_roll2","path":"sprites/s_roll2/s_roll2.yy",},},
     {"id":{"name":"s_impact","path":"sprites/s_impact/s_impact.yy",},},
     {"id":{"name":"s_explosion","path":"sounds/s_explosion/s_explosion.yy",},},
     {"id":{"name":"o_impact","path":"objects/o_impact/o_impact.yy",},},
@@ -62,6 +66,7 @@
     {"id":{"name":"s_flame2","path":"sprites/s_flame2/s_flame2.yy",},},
     {"id":{"name":"s_bossflame","path":"sprites/s_bossflame/s_bossflame.yy",},},
     {"id":{"name":"o_flame","path":"objects/o_flame/o_flame.yy",},},
+    {"id":{"name":"s_die","path":"sprites/s_die/s_die.yy",},},
     {"id":{"name":"s_boss2","path":"sprites/s_boss2/s_boss2.yy",},},
     {"id":{"name":"o_bossflame","path":"objects/o_bossflame/o_bossflame.yy",},},
     {"id":{"name":"s_rollright","path":"sprites/s_rollright/s_rollright.yy",},},
@@ -73,7 +78,6 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
