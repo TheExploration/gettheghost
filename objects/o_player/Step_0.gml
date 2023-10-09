@@ -1,6 +1,6 @@
 
 /// @description STEP
-// You can write your code in this editor
+// Death
 if (hp <= 0) {
 	has_control = false;
 	sprite_index = s_die;
@@ -14,7 +14,7 @@ if (hp <= 0) {
 
 
 //Get Input Dodgeroll
-if (mouse_check_button_pressed(mb_right) && !roll && has_control) {
+if ((mouse_check_button_pressed(mb_right) || keyboard_check_pressed(vk_shift)) && !roll && has_control) {
 	has_control = false;
 	roll = true;
 	invulnerable = true;
@@ -58,6 +58,7 @@ if (has_control) {
 		instance_create_layer(x-3, y, "Projectile", o_bullet);
 		instance_create_layer(x+2, y, "Projectile", o_bullet);
 		audio_play_sound(s_shoot, 1, false);
+		muzzleflash = true
 		screenshake(5, 0.1, 0.05)
 	} else if (keyboard_check(vk_space) || mouse_check_button(mb_left)) {
 
@@ -67,15 +68,16 @@ if (has_control) {
 			instance_create_layer(x-3, y, "Projectile", o_bullet);
 			shoot_delay = 0;
 			 audio_play_sound(s_shoot, 1, false);
+			 muzzleflash = true
 			 screenshake(5, 0.1, 0.05)
 		}
 	}
 }
 //Get Input
-up = keyboard_check(ord("W"));
-down = keyboard_check(ord("S"));
-left = keyboard_check(ord("A"));
-right = keyboard_check(ord("D"));
+up = keyboard_check(ord("W")) || keyboard_check(vk_up);
+down = keyboard_check(ord("S"))||keyboard_check(vk_down);
+left = keyboard_check(ord("A"))||keyboard_check(vk_left);
+right = keyboard_check(ord("D"))||keyboard_check(vk_right);
 
 if (has_control) {
 	//Calculate Movement

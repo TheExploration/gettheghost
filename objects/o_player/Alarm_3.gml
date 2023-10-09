@@ -1,4 +1,4 @@
-/// @description Hurt
+/// @description Hurt Flash
 flashing = false;
 
 

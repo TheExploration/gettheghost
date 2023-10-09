@@ -11,3 +11,8 @@ if (flashAlpha > 0) {
 	
 	shader_reset();
 }
+if (muzzleflash) {
+	draw_sprite(s_muzzleflash, -1, x+gun1, y-5)
+	draw_sprite(s_muzzleflash, -1, x+gun2, y-5)
+	muzzleflash = false
+}

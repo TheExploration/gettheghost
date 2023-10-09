@@ -5,7 +5,7 @@ if (!invulnerable) {
 	flashing = true;
 	alarm[3] = 25;
 	invulnerable = true;
-	alarm[0] = 30;
+	alarm[0] = 60;
 	audio_play_sound(snd_phurt, 10, false)
 	instance_destroy(other);
 }

@@ -58,6 +58,7 @@ if (has_control) {
 		instance_create_layer(x+3, y, "Projectile", o_bullet);
 		audio_play_sound(s_shoot, 1, false);
 		screenshake(5, 0.1, 0.05)
+		muzzleflash = true
 	} else if (gamepad_button_check(0, gp_face1)) {
 
 		shoot_delay++;
@@ -67,6 +68,7 @@ if (has_control) {
 			shoot_delay = 0;
 			audio_play_sound(s_shoot, 1, false);
 			screenshake(5, 0.1, 0.05)
+			muzzleflash = true
 		}
 	}
 }

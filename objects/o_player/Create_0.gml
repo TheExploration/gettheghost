@@ -7,7 +7,9 @@ vsp = 0;
 shoot_delay = 0;
 hp = 6;
 invulnerable=false;
-
+muzzleflash = false;
+gun1 = -3
+gun2 = 2
 image_speed = 0
 
 //Hit Flash
