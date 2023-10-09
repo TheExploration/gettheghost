@@ -6,7 +6,7 @@ randomize()
 laser1 = noone
 laser2= noone
 player = o_player1
-attack_mode = 4
+attack_mode = 1
 counter = 0;
 flashAlpha = 0;
 flashColor = c_white;

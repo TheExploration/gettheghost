@@ -5,7 +5,10 @@ if (image_index > image_number-1 && counter < 300) {
 }
 counter++;
 
-
+if (image_index > image_number-1 && counter > 400) {
+	image_speed = 0;
+	instance_destroy();
+}
 
 
 

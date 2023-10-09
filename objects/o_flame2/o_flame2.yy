@@ -5,6 +5,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -35,6 +36,9 @@
     "name": "s_flame2",
     "path": "sprites/s_flame2/s_flame2.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_flame2",
+    "path": "sprites/s_flame2/s_flame2.yy",
+  },
   "visible": true,
 }

@@ -1,12 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_flame",
+  "name": "o_burn",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"o_boss","path":"objects/o_boss/o_boss.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,12 +28,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_flame",
-    "path": "sprites/s_flame/s_flame.yy",
+    "name": "s_burn",
+    "path": "sprites/s_burn/s_burn.yy",
   },
-  "spriteMaskId": {
-    "name": "s_flame2",
-    "path": "sprites/s_flame2/s_flame2.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }
