@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp = 1000;
+hp = 600;
 hp_max = hp
 randomize()
 laser1 = noone

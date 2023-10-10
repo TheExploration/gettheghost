@@ -274,7 +274,7 @@ switch (attack_mode)
 				
 			}
 			
-		} else if (counter < 300) {
+		} else if (counter > 260 && counter < 300) {
 			if (abs(x - player.x) >3 ) {
 				
 				x = x+ sign(player.x-x)*1.5
