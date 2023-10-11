@@ -14,6 +14,3 @@ hsp = 0;
 vsp=0
 alarm[0] =irandom_range(25, 120)
 
-#macro hpX 1240
-#macro hpY 155
-

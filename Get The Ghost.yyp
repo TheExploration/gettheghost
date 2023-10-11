@@ -31,7 +31,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.106",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},},
@@ -54,6 +54,7 @@
     {"id":{"name":"o_flame2","path":"objects/o_flame2/o_flame2.yy",},},
     {"id":{"name":"s_pentashot","path":"sprites/s_pentashot/s_pentashot.yy",},},
     {"id":{"name":"enemybullet","path":"sprites/enemybullet/enemybullet.yy",},},
+    {"id":{"name":"o_laser2","path":"objects/o_laser2/o_laser2.yy",},},
     {"id":{"name":"s_roll2right","path":"sprites/s_roll2right/s_roll2right.yy",},},
     {"id":{"name":"s_boss","path":"sprites/s_boss/s_boss.yy",},},
     {"id":{"name":"s_flame","path":"sprites/s_flame/s_flame.yy",},},
@@ -89,6 +90,7 @@
     {"id":{"name":"random_attack","path":"scripts/random_attack/random_attack.yy",},},
     {"id":{"name":"s_die","path":"sprites/s_die/s_die.yy",},},
     {"id":{"name":"s_boss2","path":"sprites/s_boss2/s_boss2.yy",},},
+    {"id":{"name":"random_attack2","path":"scripts/random_attack2/random_attack2.yy",},},
     {"id":{"name":"o_pentashot","path":"objects/o_pentashot/o_pentashot.yy",},},
     {"id":{"name":"o_bossflame","path":"objects/o_bossflame/o_bossflame.yy",},},
     {"id":{"name":"wave","path":"sprites/wave/wave.yy",},},
@@ -104,7 +106,6 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

@@ -21,7 +21,7 @@ counter++;
 switch (attack_mode)
 {
 	case 0:
-		random_attack();
+		random_attack2();
 		counter = 0
 		if (instance_exists(o_player1) && instance_exists(o_player2)) {
 			
@@ -68,7 +68,7 @@ switch (attack_mode)
 				x = x+ sign(player.x-x)*1.5
 			} else {
 				counter = 0;
-				random_attack();
+				random_attack2();
 			}
 		}
 		if (counter > 180) {
@@ -77,11 +77,11 @@ switch (attack_mode)
 				x = x+ sign(player.x-x)*2.5
 			} else {
 				counter = 0;
-				random_attack()
+				random_attack2()
 			}
 		}
 		if (counter > 240) {
-			random_attack()
+			random_attack2()
 		}
 		
     break;
@@ -134,7 +134,7 @@ switch (attack_mode)
 			}
 		} else if (counter > 300) {
 			counter =0
-			random_attack()
+			random_attack2()
 		}
         
     break;
@@ -162,7 +162,7 @@ switch (attack_mode)
 		}
 		if (counter > 320) {
 			counter =0
-			random_attack()
+			random_attack2()
 		}
     break;
 
@@ -174,10 +174,8 @@ switch (attack_mode)
 			} 
 		} else if (counter == 200) {
 			audio_play_sound(snd_laser, 0, false) 
-		laser1 = instance_create_layer(x-5,y+5,"Projectile", o_laser)
-					
-	
-				laser2 = instance_create_layer(x+5,y+5,"Projectile", o_laser) 
+			laser1 = instance_create_layer(x-5,y+5,"Projectile", o_laser2)
+			laser2 = instance_create_layer(x+5,y+5,"Projectile", o_laser2) 
 					
 			
 		} else if (counter > 260 && counter < 370) {
@@ -196,7 +194,7 @@ switch (attack_mode)
 			laser2.image_speed = -3;
 		} else if (counter > 630) {
 			counter = 0;
-			random_attack()
+			random_attack2()
 		}
 		
 	break;
@@ -312,7 +310,7 @@ switch (attack_mode)
 			
 		} else if (counter > 340) {
 			counter = 0;
-			random_attack();
+			random_attack2();
 		}
 	break;
 	
