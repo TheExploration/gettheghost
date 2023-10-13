@@ -3,6 +3,7 @@
 hp = 600;
 hp_max = hp
 randomize()
+dieOnce = false;
 laser1 = noone
 laser2= noone
 player = o_player1

@@ -3,8 +3,8 @@
 hp = 600;
 hp_max = hp
 randomize()
-laser1 = noone
-laser2= noone
+dieOnce = false;
+audio_play_sound(snd_boss, 10, false);
 player = o_player1
 attack_mode = 1
 counter = 0;
