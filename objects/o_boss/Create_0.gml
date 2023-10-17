@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp = 600;
+hp = 500;
 hp_max = hp
 randomize()
 dieOnce = false;

@@ -3,7 +3,7 @@
 function random_attack() {
 	if (instance_exists(o_boss)) {
 		with (o_boss) {
-			if (hp < 550) {
+			if (hp < 450) {
 				attack_mode = irandom_range(0,5);
 			} else {
 				attack_mode = 1;
