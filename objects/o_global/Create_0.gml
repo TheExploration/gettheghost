@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-layer_vspeed("Background",1);
+global.bgspeed = 1;
+layer_vspeed("Background",global.bgspeed);
 
 //Screenshake
 shake = false;
