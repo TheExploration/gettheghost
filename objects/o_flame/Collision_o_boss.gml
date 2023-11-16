@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-iff (runOnce) {
+if (runOnce) {
 	other.hp-=30;
 	other.flashAlpha =1;
 	runOnce = false;

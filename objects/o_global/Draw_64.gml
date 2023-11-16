@@ -17,12 +17,6 @@ if (instance_exists(o_player2)) {
 	//nothing
 }
 
-/// @description CHECK WIN
-
-
-if (global.gameover) {
-	draw_text(400, 400,"PRESS R TO RESTART!");
-}
 
 
 
