@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "play",
-    "path": "sprites/play/play.yy",
+    "name": "play2",
+    "path": "sprites/play2/play2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

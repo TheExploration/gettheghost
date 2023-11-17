@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "title",
-    "path": "sprites/title/title.yy",
+    "name": "title2",
+    "path": "sprites/title2/title2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
