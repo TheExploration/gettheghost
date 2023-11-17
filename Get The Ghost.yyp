@@ -31,7 +31,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.8.2.106",
   },
   "resources": [
     {"id":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},},
@@ -57,6 +57,7 @@
     {"id":{"name":"enemybullet","path":"sprites/enemybullet/enemybullet.yy",},},
     {"id":{"name":"o_laser2","path":"objects/o_laser2/o_laser2.yy",},},
     {"id":{"name":"s_roll2right","path":"sprites/s_roll2right/s_roll2right.yy",},},
+    {"id":{"name":"init","path":"rooms/init/init.yy",},},
     {"id":{"name":"skf3shoppingcentre","path":"sounds/skf3shoppingcentre/skf3shoppingcentre.yy",},},
     {"id":{"name":"s_boss","path":"sprites/s_boss/s_boss.yy",},},
     {"id":{"name":"s_flame","path":"sprites/s_flame/s_flame.yy",},},
@@ -72,6 +73,7 @@
     {"id":{"name":"s_bg2","path":"sprites/s_bg2/s_bg2.yy",},},
     {"id":{"name":"s_hp","path":"sprites/s_hp/s_hp.yy",},},
     {"id":{"name":"o_wave","path":"objects/o_wave/o_wave.yy",},},
+    {"id":{"name":"o_transition","path":"objects/o_transition/o_transition.yy",},},
     {"id":{"name":"o_title","path":"objects/o_title/o_title.yy",},},
     {"id":{"name":"o_player1","path":"objects/o_player1/o_player1.yy",},},
     {"id":{"name":"s_roll2","path":"sprites/s_roll2/s_roll2.yy",},},
@@ -81,6 +83,7 @@
     {"id":{"name":"o_playerbullet","path":"objects/o_playerbullet/o_playerbullet.yy",},},
     {"id":{"name":"o_impact","path":"objects/o_impact/o_impact.yy",},},
     {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},},
+    {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},},
     {"id":{"name":"o_player2","path":"objects/o_player2/o_player2.yy",},},
     {"id":{"name":"play","path":"sprites/play/play.yy",},},
     {"id":{"name":"boss_vbound","path":"objects/boss_vbound/boss_vbound.yy",},},
@@ -112,9 +115,11 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"init","path":"rooms/init/init.yy",},},
     {"roomId":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

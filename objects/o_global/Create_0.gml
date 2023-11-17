@@ -11,3 +11,5 @@ shake_fade = 0.25;
 
 global.gameover = false;
 global.win = false;
+
+runonce = false;
