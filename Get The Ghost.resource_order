@@ -90,6 +90,7 @@
     {"name":"wave","order":26,"path":"sprites/wave/wave.yy",},
     {"name":"o_doubleshot","order":14,"path":"objects/o_doubleshot/o_doubleshot.yy",},
     {"name":"s_muzzleflash","order":21,"path":"sprites/s_muzzleflash/s_muzzleflash.yy",},
+    {"name":"avii","order":13,"path":"sounds/avii/avii.yy",},
     {"name":"s_rollright","order":14,"path":"sprites/s_rollright/s_rollright.yy",},
     {"name":"o_enemybullet","order":10,"path":"objects/o_enemybullet/o_enemybullet.yy",},
     {"name":"s_burn","order":29,"path":"sprites/s_burn/s_burn.yy",},

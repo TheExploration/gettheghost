@@ -24,7 +24,7 @@
   "isDnd": false,
   "layers": [
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"WIN","depth":0,"effectEnabled":true,"effectType":"_filter_dots","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_DotsScale","type":0,"value":"31",},
+        {"name":"g_DotsScale","type":0,"value":"40",},
         {"name":"g_DotsSize","type":0,"value":"0.4",},
         {"name":"g_DotsSize","type":0,"value":"0.6",},
         {"name":"g_DotsOffset","type":0,"value":"0",},

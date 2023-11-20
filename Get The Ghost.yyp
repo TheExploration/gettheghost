@@ -110,6 +110,7 @@
     {"id":{"name":"wave","path":"sprites/wave/wave.yy",},},
     {"id":{"name":"o_doubleshot","path":"objects/o_doubleshot/o_doubleshot.yy",},},
     {"id":{"name":"s_muzzleflash","path":"sprites/s_muzzleflash/s_muzzleflash.yy",},},
+    {"id":{"name":"avii","path":"sounds/avii/avii.yy",},},
     {"id":{"name":"s_rollright","path":"sprites/s_rollright/s_rollright.yy",},},
     {"id":{"name":"Notes","path":"notes/Notes/Notes.yy",},},
     {"id":{"name":"s_bg","path":"sprites/s_bg/s_bg.yy",},},
