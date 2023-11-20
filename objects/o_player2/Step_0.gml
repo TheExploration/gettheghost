@@ -16,7 +16,7 @@ if (hp <= 0) {
 
 
 //Get Input Dodgeroll
-if (gamepad_button_check_pressed(0, gp_shoulderr) && !roll && has_control) {
+if ((keyboard_check_pressed(191) || keyboard_check_pressed(222) ||keyboard_check_pressed(110) || gamepad_button_check_pressed(0, gp_shoulderr)) && !roll && has_control) {
 	has_control = false;
 	roll = true;
 	invulnerable = true;
@@ -39,8 +39,12 @@ if (gamepad_button_check_pressed(0, gp_shoulderr) && !roll && has_control) {
 	alarm[1] = 15;
 	alarm[2] = 30;
 	
-	rolldir  = point_direction(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv)); 
-	
+	if (gamepad_is_connected(0)) {
+		rolldir  = point_direction(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv)); 
+	} else {
+		
+		rolldir  = point_direction(0, 0, hsp, vsp); 
+	}
 	
 }
 if (roll && !has_control) {
@@ -52,14 +56,14 @@ if (roll && !has_control) {
 
 //Get Input Shooting
 if (has_control) {
-	if (gamepad_button_check_pressed(0, gp_face1)) {
+	if (gamepad_button_check_pressed(0, gp_face1) || keyboard_check_pressed(190) || keyboard_check_pressed(186) || keyboard_check_pressed(96)) {
 		shoot_delay = 0;
 		instance_create_layer(x-4, y, "Projectile", o_bullet);
 		instance_create_layer(x+3, y, "Projectile", o_bullet);
 		audio_play_sound(s_shoot, 1, false);
 		screenshake(5, 0.1, 0.05)
 		muzzleflash = true
-	} else if (gamepad_button_check(0, gp_face1)) {
+	} else if (gamepad_button_check(0, gp_face1) || keyboard_check(190) || keyboard_check(186) || keyboard_check(96)) {
 
 		shoot_delay++;
 		if (shoot_delay > 10) {
@@ -74,19 +78,48 @@ if (has_control) {
 }
 	
 	
-//Get Input Movement
+//Get Input Movement CONTROLLER
 if (has_control) {
-	var _dir  = point_direction(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv)); //lets say the direction from the x,y point to the mouse x, y point are = 40;
-	var _len = point_distance(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv));
-	hsp = lengthdir_x(_len, _dir)*move_spd;
-	vsp = lengthdir_y(_len, _dir)*move_spd;
+	if (gamepad_is_connected(0)) {
+		var _dir  = point_direction(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv)); //lets say the direction from the x,y point to the mouse x, y point are = 40;
+		var _len = point_distance(0, 0, gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axislv));
+		hsp = lengthdir_x(_len, _dir)*move_spd;
+		vsp = lengthdir_y(_len, _dir)*move_spd;
 
-	if (hsp > 0) {
-		image_index = 1;
-	} else if (hsp < 0){
-		image_index = 2;
+		if (hsp > 0) {
+			image_index = 1;
+		} else if (hsp < 0){
+			image_index = 2;
+		} else {
+			image_index = 0;
+		}
 	} else {
-		image_index = 0;
+		//Get Input KEYBOARD
+		up = keyboard_check(vk_up);
+		down = keyboard_check(vk_down);
+		left = keyboard_check(vk_left);
+		right = keyboard_check(vk_right)
+
+	
+		//Calculate Movement
+		var moveX = right-left;
+		var moveY = down-up;
+
+		//Horizontal
+		hsp = moveX * move_spd;
+
+		//Vertical
+		vsp = moveY * move_spd;
+
+		//Diagonal
+
+
+		if (hsp != 0 && vsp != 0) {
+			hsp = hsp/sqrt(2);
+			vsp = vsp/sqrt(2);
+		}
+		image_index = moveX
+	
 	}
 }
 

@@ -23,7 +23,19 @@
   ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":0,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"WIN","depth":0,"effectEnabled":true,"effectType":"_filter_dots","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_DotsScale","type":0,"value":"31",},
+        {"name":"g_DotsSize","type":0,"value":"0.4",},
+        {"name":"g_DotsSize","type":0,"value":"0.6",},
+        {"name":"g_DotsOffset","type":0,"value":"0",},
+        {"name":"g_DotsOffset","type":0,"value":"0",},
+        {"name":"g_DotsDisplacement","type":0,"value":"1",},
+        {"name":"g_DotsSpeed","type":0,"value":"1.05",},
+        {"name":"g_DotsColourSpeed","type":0,"value":"2",},
+        {"name":"g_DotsColours","type":0,"value":"256",},
+        {"name":"g_DotsSharpness","type":0,"value":"0.5",},
+        {"name":"g_DotsPalette","type":2,"value":null,},
+      ],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Sprites","assets":[],"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17663606","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_bossflame","path":"objects/o_bossflame/o_bossflame.yy",},"properties":[],"rotation":180.0,"scaleX":1.0,"scaleY":1.0,"x":130.0,"y":28.0,},

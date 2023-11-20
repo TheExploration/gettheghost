@@ -14,7 +14,7 @@ if (hp <= 0) {
 
 
 //Get Input Dodgeroll
-if ((mouse_check_button_pressed(mb_right) || keyboard_check_pressed(vk_shift)) && !roll && has_control) {
+if ((mouse_check_button_pressed(mb_right) || keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("H"))) && !roll && has_control) {
 	has_control = false;
 	roll = true;
 	invulnerable = true;
@@ -51,7 +51,7 @@ if (roll && !has_control) {
 
 
 if (has_control) {
-	if (keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left)) {
+	if (keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("G"))) {
 		shoot_delay = 0;
 		
 	
@@ -60,7 +60,7 @@ if (has_control) {
 		audio_play_sound(s_shoot, 1, false);
 		muzzleflash = true
 		screenshake(5, 0.1, 0.05)
-	} else if (keyboard_check(vk_space) || mouse_check_button(mb_left)) {
+	} else if (keyboard_check(vk_space) || mouse_check_button(mb_left) || keyboard_check(ord("G"))) {
 
 		shoot_delay++;
 		if (shoot_delay > 10) {
