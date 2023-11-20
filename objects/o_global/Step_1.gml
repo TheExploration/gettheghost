@@ -4,6 +4,7 @@ if (global.gameover && !runonce) {
 }
 if (global.win && !runonce) {
 	runonce = true;
+	audio_stop_all()
 	audio_play_sound(avii, 10, false)
 	screenshake(30, 2, 1)
 	layer_set_visible("WIN", true)
